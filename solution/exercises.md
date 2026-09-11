@@ -1,4 +1,4 @@
-# K4 — Ngày 1: Bài Tập & Phản Ánh
+# K4 — Ngày 2: Bài Tập & Phản Ánh
 
 ## Khám Phá LLM API | Phiếu Thực Hành
 
