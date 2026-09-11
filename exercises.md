@@ -80,7 +80,7 @@ non-streaming lại phù hợp hơn?** (1 đoạn văn)
 thế gì khi API bị quá tải? Điều gì xảy ra nếu hàng nghìn client cùng retry
 với delay cố định giống nhau?**
 
-> Exponential backoff tăng khoảng chờ sau mỗi lần lỗi, giảm tốc độ gửi lại khi server đang quá tải và cho dịch vụ thời gian hồi phục; lab dùng 0,1 → 0,2 → 0,4 giây cho ba lần retry. Nếu hàng nghìn client cùng chờ đúng một giây, chúng có thể đồng loạt gửi lại và tạo các đợt quá tải lặp đi lặp lại. Backoff thuần túy vẫn có thể đồng bộ giữa các client, nên sản phẩm thực nên thêm jitter, giới hạn số lần thử, tôn trọng Retry-After và chỉ retry lỗi tạm thời. Trong lần thử Gemma, 429 xuất phát từ pool dùng chung phía provider; retry ngắn của lab không đủ khắc phục, vì vậy đã chuyển sang hai endpoint Nex đáp ứng được.
+> Exponential backoff tăng khoảng chờ sau mỗi lần lỗi, giảm tốc độ gửi lại khi server đang quá tải và cho dịch vụ thời gian hồi phục; lab dùng 0,1 → 0,2 → 0,4 giây cho ba lần retry. Nếu hàng nghìn client cùng chờ đúng một giây, chúng có thể đồng loạt gửi lại và tạo các đợt quá tải lặp đi lặp lại thì lúc đó server gần như không có cơ hội để hồi phục. Backoff thuần túy vẫn có thể đồng bộ giữa các client, nên sản phẩm thực nên thêm jitter (thêm yếu tố ngẫu nhiên vào delay), giới hạn số lần thử, tôn trọng Retry-After và chỉ retry lỗi tạm thời.
 
 ---
 
@@ -109,4 +109,4 @@ thiện cụ thể và mô tả ngắn cách triển khai:**
 - [x] `python grade.py` — xem điểm tự động, mục tiêu ≥ 75/100
 - [x] Cả 4 checkpoint pytest đều pass
 - [x] Tất cả 9 câu trong file này đã được trả lời
-- [ ] Đã copy bài làm vào folder `solution/`, push lên fork và dán link trên trang bài Lab ở VLearn trước 23:59 ngày 11/09/2026
+- [x] Đã copy bài làm vào folder `solution/`, push lên fork và dán link trên trang bài Lab ở VLearn trước 23:59 ngày 11/09/2026
