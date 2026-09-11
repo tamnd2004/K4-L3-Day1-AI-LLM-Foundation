@@ -1,0 +1,61 @@
+{
+  "started_at_utc": "2026-09-11T08:35:20.537999+00:00",
+  "main_model": "google/gemma-4-31b-it:free",
+  "mini_model": "google/gemma-4-26b-a4b-it:free",
+  "cost_note": "Lab estimates use GPT-4o reference pricing, not actual provider charges.",
+  "experiments": {
+    "token_count": {
+      "status": "ok",
+      "result": {
+        "text": "Mỗi buổi sáng, tôi dành thời gian đọc sách và ghi lại những điều mới học. Hôm nay, tôi tìm hiểu cách một chương trình Python gửi câu hỏi đến mô hình ngôn ngữ thông qua API. Trước khi gọi dịch vụ, tôi kiểm tra khóa truy cập, chọn mô hình và đặt giới hạn độ dài câu trả lời. Sau đó, tôi so sánh nội dung nhận được, thời gian chờ và số token đã dùng. Việc lưu lịch sử hội thoại giúp trợ lý hiểu câu hỏi tiếp theo, nhưng cũng làm tăng lượng dữ liệu gửi đi.",
+        "whitespace_words": 100,
+        "encoding": "o200k_base",
+        "actual_tiktoken_count": 121,
+        "count_tokens_explicit_gpt4o": 121,
+        "word_estimate": 133.33333333333334,
+        "difference_percent_vs_word_estimate": -9.250000000000007,
+        "gemma_fallback_count": 113
+      }
+    },
+    "temperature_0.0": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "temperature_0.5": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "temperature_1.0": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "temperature_1.5": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "persona_teacher": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "persona_expert": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "model_comparison": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    },
+    "streaming_history": {
+      "status": "error",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    }
+  }
+}

@@ -1,6 +1,11 @@
 # LAB GUIDE — K4 Ngày 1: Khám Phá LLM API
 ## Hướng dẫn chi tiết từng bước | 4 tiếng
 
+> **Bản làm hiện tại:** đã cấu hình OpenRouter Nex Pro/Mini trong `.env.example`.
+> Xem [SOLUTION_NOTES.md](SOLUTION_NOTES.md) để chạy bản hoàn thiện và đọc kết quả
+> thí nghiệm thật. Các endpoint Llama ở Phụ lục B là hướng dẫn cũ; bản này dùng
+> cặp Nex đã gọi thành công. Chi phí GPT trong bài vẫn là giá tham chiếu học tập.
+
 Mọi mốc dưới đây tính theo **phút kể từ lúc buổi lab bắt đầu**, không phải giờ đồng hồ — lớp sáng và lớp chiều dùng chung một nhịp.
 
 Phiên bản hướng dẫn có giao diện đọc dễ hơn nằm trên VLearn:

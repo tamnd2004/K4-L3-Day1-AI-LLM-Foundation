@@ -1,0 +1,141 @@
+{
+  "started_at_utc": "2026-09-11T08:38:46.148684+00:00",
+  "main_model": "nex-agi/nex-n2.5-pro:free",
+  "mini_model": "nex-agi/nex-n2.5-mini:free",
+  "reasoning_effort": "none",
+  "cost_note": "Lab estimates use GPT-4o reference pricing, not actual provider charges.",
+  "experiments": {
+    "token_count": {
+      "status": "ok",
+      "result": {
+        "text": "Mỗi buổi sáng, tôi dành thời gian đọc sách và ghi lại những điều mới học. Hôm nay, tôi tìm hiểu cách một chương trình Python gửi câu hỏi đến mô hình ngôn ngữ thông qua API. Trước khi gọi dịch vụ, tôi kiểm tra khóa truy cập, chọn mô hình và đặt giới hạn độ dài câu trả lời. Sau đó, tôi so sánh nội dung nhận được, thời gian chờ và số token đã dùng. Việc lưu lịch sử hội thoại giúp trợ lý hiểu câu hỏi tiếp theo, nhưng cũng làm tăng lượng dữ liệu gửi đi.",
+        "whitespace_words": 100,
+        "encoding": "o200k_base",
+        "actual_tiktoken_count": 121,
+        "count_tokens_explicit_gpt4o": 121,
+        "word_estimate": 133.33333333333334,
+        "difference_percent_vs_word_estimate": -9.250000000000007,
+        "configured_model_fallback_count": 113
+      }
+    },
+    "temperature_0.0": {
+      "status": "ok",
+      "result": {
+        "prompt": "Hãy kể cho tôi một sự thật thú vị về Việt Nam.",
+        "temperature": 0.0,
+        "top_p": 0.9,
+        "max_tokens": 256,
+        "response_and_latency": [
+          "Một sự thật thú vị: **Việt Nam là một trong những quốc gia xuất khẩu cà phê lớn nhất thế giới** — đứng thứ hai toàn cầu sau Brazil.  \n\nĐặc biệt, vùng **Tây Nguyên** như Đắk Lắk, Lâm Đồng, Gia Lai là “thủ phủ” cà phê của Việt Nam. Cà phê robusta Việt Nam nổi tiếng đậm, mạnh và thường được dùng trong cà phê sữa đá — một món rất đặc trưng của Việt Nam.",
+          2.9408178000012413
+        ]
+      }
+    },
+    "temperature_0.5": {
+      "status": "ok",
+      "result": {
+        "prompt": "Hãy kể cho tôi một sự thật thú vị về Việt Nam.",
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "max_tokens": 256,
+        "response_and_latency": [
+          "Một sự thật thú vị về Việt Nam là: **hang Sơn Đoòng ở Quảng Bình là hang động tự nhiên lớn nhất thế giới**.\n\nHang này lớn đến mức có cả **rừng nguyên sinh, sông ngầm, hệ sinh thái riêng**, và thậm chí có những đám mây hình thành bên trong hang. Sơn Đoòng được phát hiện chính thức với thế giới vào năm 2009 và đã trở thành một trong những kỳ quan thiên nhiên nổi tiếng của Việt Nam.",
+          2.0410105000009935
+        ]
+      }
+    },
+    "temperature_1.0": {
+      "status": "ok",
+      "result": {
+        "prompt": "Hãy kể cho tôi một sự thật thú vị về Việt Nam.",
+        "temperature": 1.0,
+        "top_p": 0.9,
+        "max_tokens": 256,
+        "response_and_latency": [
+          "Một sự thật thú vị về Việt Nam là: **Việt Nam có hệ thống hang động lớn bậc nhất thế giới**.\n\nĐặc biệt, **hang Sơn Đoòng** ở tỉnh Quảng Bình được công nhận là **hang động tự nhiên lớn nhất thế giới** theo nhiều kỷ lục. Hang rộng đến mức bên trong có cả **rừng, sông, mây và hệ sinh thái riêng**. Một số khoang trong hang còn cao hơn cả những tòa nhà chọc trời!",
+          1.7734522999999172
+        ]
+      }
+    },
+    "temperature_1.5": {
+      "status": "ok",
+      "result": {
+        "prompt": "Hãy kể cho tôi một sự thật thú vị về Việt Nam.",
+        "temperature": 1.5,
+        "top_p": 0.9,
+        "max_tokens": 256,
+        "response_and_latency": [
+          "Một sự thật thú vị: **Việt Nam là một trong những quốc gia xuất khẩu cà phê lớn nhất thế giới**.\n\nCụ thể, Việt Nam thường đứng **thứ hai toàn cầu** về sản lượng cà phê, chỉ sau Brazil. Đặc biệt, vùng **Tây Nguyên** — với các tỉnh như Đắk Lắk, Lâm Đồng, Gia Lai — là “thủ phủ cà phê” của cả nước, nơi trồng nhiều cà phê robusta nổi tiếng.\n\nVì vậy, ly cà phê sữa đá đậm đà mà nhiều người yêu thích không chỉ là nét văn hóa quen thuộc ở Việt Nam, mà còn liên quan đến một ngành xuất khẩu rất quan trọng của đất nước.",
+          2.363970300000801
+        ]
+      }
+    },
+    "persona_teacher": {
+      "status": "ok",
+      "result": {
+        "persona": "Bạn là giáo viên tiểu học, giải thích thật đơn giản cho trẻ 8 tuổi.",
+        "prompt": "Giải thích blockchain là gì?",
+        "max_tokens": 512,
+        "response_and_latency": [
+          "Blockchain giống như một **cuốn sổ ghi chép đặc biệt**.\n\nVí dụ lớp mình có một cuốn sổ ghi lại:\n\n- Bạn An cho bạn Bình 2 viên kẹo.\n- Bạn Chi cho bạn Mai 1 viên kẹo.\n- Bạn Hùng cho bạn Lan 3 viên kẹo.\n\nĐiều đặc biệt là:\n\n1. **Mỗi trang sổ ghi nhiều dòng**\n   - Mỗi trang giống như một “khối” thông tin.\n\n2. **Các trang được nối với nhau**\n   - Trang sau luôn nhắc đến trang trước, nên tạo thành một “chuỗi”.\n\n3. **Không dễ sửa**\n   - Nếu ai đó muốn xóa hay đổi dòng ghi, mọi người sẽ phát hiện ra ngay.\n\n4. **Nhiều người cùng giữ bản sao**\n   - Không chỉ một người giữ sổ, mà nhiều người cùng giữ. Vì vậy rất khó gian lận.\n\nNói đơn giản:\n\n**Blockchain là một cuốn sổ điện tử ghi lại các giao dịch hoặc thông tin, được nhiều người cùng giữ và rất khó bị sửa đổi.**\n\nVí dụ blockchain có thể dùng để ghi lại việc chuyển tiền, mua bán đồ, hoặc kiểm tra một món đồ có thật hay không.",
+          5.072470799997973
+        ]
+      }
+    },
+    "persona_expert": {
+      "status": "ok",
+      "result": {
+        "persona": "Bạn là chuyên gia tài chính, trả lời chuyên sâu bằng thuật ngữ kỹ thuật.",
+        "prompt": "Giải thích blockchain là gì?",
+        "max_tokens": 512,
+        "response_and_latency": [
+          "**Blockchain (chuỗi khối)** là một **cơ sở dữ liệu phân tán, bất biến theo thiết kế**, dùng để ghi nhận các giao dịch hoặc trạng thái theo thứ tự thời gian mà không cần một bên trung tâm duy nhất kiểm soát.\n\nNói kỹ thuật hơn, blockchain là **distributed ledger** trong đó dữ liệu được tổ chức thành các **block**, mỗi block liên kết với block trước bằng **hash**. Khi một block được xác thực và thêm vào chuỗi, việc sửa đổi dữ liệu cũ sẽ đòi hỏi phải tính toán lại toàn bộ chuỗi và được phần lớn mạng lưới chấp thuận, nên rất khó giả mạo.\n\n### 1. Blockchain hoạt động như thế nào?\n\nMột blockchain thường gồm các thành phần chính:\n\n- **Block**: chứa dữ liệu giao dịch, timestamp, nonce và hash của block trước.\n- **Hash**: hàm mã hóa một chiều, ví dụ SHA-256, dùng để định danh và kiểm tra tính toàn vẹn dữ liệu.\n- **Node**: các máy tính tham gia mạng, lưu và xác minh sổ cái.\n- **Consensus mechanism**: cơ chế đồng thuận để mạng thống nhất block nào hợp lệ, ví dụ:\n  - **Proof of Work – PoW**\n  - **Proof of Stake – PoS**\n  - **Byzantine Fault Tolerance – BFT**\n- **Smart contract**: chương trình chạy trên blockchain, tự động thực thi điều khoản khi điều kiện được đáp ứng.\n\nQuy trình cơ bản:\n\n1. Người dùng phát sinh giao dịch.\n2. Giao dịch được ký bằng **private key**.\n3. Node trong mạng xác minh chữ ký số và tính hợp lệ.\n4. Giao dịch được đưa vào block.\n5. Block được xác nhận qua cơ chế đồng thuận.\n6. Block mới được nối vào chuỗi.\n\n### 2. Vì sao blockchain khó bị sửa đổi?\n\nBlockchain có tính **immutability** vì:\n\n- Mỗi block chứa hash của block trước.\n- Nếu sửa dữ liệu trong một block, hash của block đó thay đổi.\n- Khi hash thay đổi, các block phía sau không còn khớp.\n- Kẻ tấn công phải tính lại toàn bộ chuỗi và kiểm soát phần lớn sức mạnh đồng thuận của mạng.\n\nVới mạng lớn như Bitcoin, chi phí để tấn công là cực kỳ cao.\n\n### 3. Blockchain khác gì với cơ sở dữ liệu truyền thống?\n\n| Tiêu chí | Cơ",
+          7.849690400002146
+        ]
+      }
+    },
+    "model_comparison": {
+      "status": "ok",
+      "result": [
+        {
+          "gpt4o_response": "Temperature kiểm soát mức độ “ngẫu nhiên/nhiệt” của toàn bộ phân phối xác suất, còn top_p giới hạn lựa chọn vào nhóm token có tổng xác suất tích lũy ≤ p.",
+          "mini_response": "Temperature điều khiển mức độ ngẫu nhiên của từng lựa chọn từ vựng, còn top_p (nucleus sampling) giới hạn tập từ có khả năng được chọn theo tổng xác suất tích lũy.",
+          "gpt4o_latency": 1.360219500002131,
+          "mini_latency": 0.8228312999999616,
+          "gpt4o_cost_estimate": 0.0004133333333333333,
+          "prompt": "Giải thích khác biệt giữa temperature và top_p trong một câu."
+        }
+      ]
+    },
+    "streaming_history": {
+      "status": "ok",
+      "result": {
+        "persona": "Bạn là trợ giảng thân thiện của khóa AI, trả lời ngắn gọn bằng tiếng Việt.",
+        "stats": {
+          "num_turns": 2,
+          "total_tokens": 60,
+          "total_cost": 0.000375,
+          "history": [
+            {
+              "role": "user",
+              "content": "Tên tôi là An. Tôi đang học Python. Hãy chào tôi bằng một câu."
+            },
+            {
+              "role": "assistant",
+              "content": "Chào An, rất vui được gặp bạn và chúc bạn học Python thật hiệu quả nhé!"
+            },
+            {
+              "role": "user",
+              "content": "Tôi tên gì và đang học ngôn ngữ lập trình nào? Trả lời một câu."
+            },
+            {
+              "role": "assistant",
+              "content": "Bạn tên là An và đang học ngôn ngữ lập trình Python."
+            }
+          ]
+        },
+        "streamed_text": "Chào An, rất vui được gặp bạn và chúc bạn học Python thật hiệu quả nhé!\nBạn tên là An và đang học ngôn ngữ lập trình Python.\n"
+      }
+    }
+  }
+}
